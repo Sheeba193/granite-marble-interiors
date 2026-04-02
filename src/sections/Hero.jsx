@@ -135,16 +135,16 @@ export const Hero = () => {
                 </Swiper>
 
                 {/* EXPERIENCE BADGE */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 z-10">
-                  <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="absolute -top-4 -left-4 glass rounded-2xl px-4 py-3 z-10">
+                  <div className="text-2xl text-center font-bold text-primary">10+</div>
                   <div className="text-xs text-muted-foreground">
                     Years Experience
                   </div>
                 </div>
 
                 {/* TRUST BADGE */}
-                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float z-10">
-                  <span className="text-sm font-medium">
+                <div className="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-3 animate-float z-10">
+                  <span className="text-md text-center pr-2 font-medium">
                     Premium Finishes
                   </span>
                 </div>
