@@ -6,6 +6,7 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
   { href: "#products", label: "Products" },
+  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -53,7 +54,7 @@ export const Navbar = () => {
               <a
                 key={index}
                 href={link.href}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface transition"
+                className="px-4 py-2 text-md text-muted-foreground hover:text-foreground hover:underline rounded-full hover:bg-surface transition"
               >
                 {link.label}
               </a>
