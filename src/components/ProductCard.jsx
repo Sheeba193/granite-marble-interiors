@@ -1,26 +1,33 @@
 const ProductCard = ({ imgURL, name, category, bestFor }) => {
-  if (!imgURL || !name) return null; // prevents crash
+  if (!imgURL || !name) return null;
 
   return (
-    <div className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="glass rounded-3xl p-4 hover:glow-border transition-all duration-300">
 
-      <img
-        src={imgURL}
-        alt={name}
-        className="w-full h-64 object-cover"
-      />
+      {/* Image */}
+      <div className="overflow-hidden rounded-2xl mb-4">
+        <img
+          src={imgURL}
+          alt={name}
+          className="w-full h-72 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+        />
+      </div>
 
-      <div className="p-4">
-        <p className="text-sm text-yellow-600 font-semibold">
+      {/* Content */}
+      <div className="px-1">
+        {/* Category */}
+        <p className="text-sm font-medium tracking-wider uppercase text-muted-foreground">
           {category || "Material"}
         </p>
 
-        <h3 className="text-lg font-bold">
+        {/* Name */}
+        <h3 className="text-xl font-semibold text-primary mt-1">
           {name}
         </h3>
 
-        <p className="text-sm text-gray-600">
-          <span className="font-semibold">Best for:</span>{" "}
+        {/* Best For */}
+        <p className="text-sm text-muted-foreground mt-2">
+          <span className="font-medium text-white">Best for:</span>{" "}
           {bestFor || "Premium interiors"}
         </p>
       </div>
