@@ -33,7 +33,10 @@ export const Footer = () => {
                 />
                 {/*  */}
                 <p className="text-md text-muted-foreground mt-2">
-                        &copy; {new Date().getFullYear()} Juma Granite Marble & Interiors. All rights reserved.
+                    <div>
+                      <div>&copy; {new Date().getFullYear()} Juma Granite Marble & Interiors.</div>
+                    </div>
+                     All rights reserved.
                 </p>
           
               </a>
