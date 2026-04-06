@@ -32,7 +32,7 @@ export const Footer = () => {
                   className="w-24 h-12 object-cover rounded-full border border-gray-300"
                 />
                 {/*  */}
-                <p className="text-md text-muted-foreground mt-2">
+                <p className="text-md text-muted-foreground mt-2 md:text-sm">
                     <div>
                       <div>&copy; {new Date().getFullYear()} Juma Granite Marble & Interiors.</div>
                     </div>
@@ -44,7 +44,7 @@ export const Footer = () => {
             
           </div>
           {/* links */}
-          <nav className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-6">
+          <nav className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-6 md:text-sm">
             {footerLinks.map((link, index) => (
               <a
                 key={index}
@@ -57,7 +57,7 @@ export const Footer = () => {
           </nav>
 
           {/* social icons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 md:flex-row md:gap-1 md:text-sm">
             {socialLinks.map((social, index) => (
               <a 
                 key={index} 

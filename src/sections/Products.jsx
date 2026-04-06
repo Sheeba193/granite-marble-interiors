@@ -17,8 +17,7 @@ export const Products = () => {
           </span>
         </h2>
         <p className="text-muted-foreground animate-fade-in animation-delay-200">
-          Explore our curated selection of premium granite and marble products, 
-          designed to add timeless elegance and sophistication to your home or office.
+          Explore our curated selection of premium granite and marble products.
         </p>
         <p className="text-muted-foreground animate-fade-in animation-delay-200">
           Each product has a different price, please contact us for more details.
