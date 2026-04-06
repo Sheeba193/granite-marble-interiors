@@ -1,34 +1,33 @@
-const ProductCard = ({ imgURL, name, category, bestFor }) => {
+const ProductCard = ({ imgURL, name, category, bestFor, small }) => {
   if (!imgURL || !name) return null;
 
   return (
-    <div className="glass rounded-3xl p-4 hover:glow-border transition-all duration-300">
-
+    <div
+      className={`glass rounded-2xl p-3 hover:glow-border transition-all duration-500 hover:scale-105 ${
+        small ? "w-[200px]" : "w-full"
+      }`}
+    >
       {/* Image */}
-      <div className="overflow-hidden rounded-2xl mb-4">
+      <div className={`${small ? "h-40" : "h-64"} overflow-hidden rounded-xl mb-3`}>
         <img
           src={imgURL}
           alt={name}
-          className="w-full h-72 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover rounded-xl hover:scale-105 transition-transform duration-500"
         />
       </div>
 
       {/* Content */}
       <div className="px-1">
-        {/* Category */}
-        <p className="text-sm font-medium tracking-wider uppercase text-muted-foreground">
+        <p className="text-xs font-medium tracking-wider uppercase text-muted-foreground">
           {category || "Material"}
         </p>
 
-        {/* Name */}
-        <h3 className="text-xl font-semibold text-primary mt-1">
+        <h3 className={`${small ? "text-sm" : "text-lg"} font-semibold text-primary mt-1`}>
           {name}
         </h3>
 
-        {/* Best For */}
-        <p className="text-sm text-muted-foreground mt-2">
-          <span className="font-medium text-white">Best for:</span>{" "}
-          {bestFor || "Premium interiors"}
+        <p className={`${small ? "text-xs" : "text-sm"} text-muted-foreground mt-1`}>
+          <span className="font-medium text-white">Best for:</span> {bestFor || "Premium interiors"}
         </p>
       </div>
     </div>

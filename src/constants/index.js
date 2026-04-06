@@ -83,11 +83,11 @@ export const products = [
     category: "Granite",
     bestFor: "Premium kitchens, statement surfaces",
   },
-  {
-    id: 13,
-    imgURL: "/products/black.jpeg",
-    name: "Black Granite",
-    category: "Granite",
-    bestFor: "Modern kitchens, sleek interiors",
-  },
+  // {
+  //   id: 13,
+  //   imgURL: "/products/black.jpeg",
+  //   name: "Black Granite",
+  //   category: "Granite",
+  //   bestFor: "Modern kitchens, sleek interiors",
+  // },
 ];
