@@ -3,7 +3,7 @@ import ProductCard from "../components/ProductCard";
 
 export const Products = () => {
   return (
-    <section className="px-6 py-16">
+    <section id="products" className="px-6 py-16">
 
       {/* Section Header */}
       <div className="max-w-3xl mb-16 text-center mx-auto">

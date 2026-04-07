@@ -96,10 +96,10 @@ export const Hero = () => {
               </a>
 
               <a
-                href="#projects"
+                href="#products"
                 className="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition"
               >
-                View Projects
+                View Products
               </a>
             </div>
           </div>
@@ -164,7 +164,7 @@ export const Hero = () => {
               <div className="flex animate-marquee">
                 {[...services, ...services].map((service, idx) => (
                   <div key={idx} className="flex-shrink-0 px-8 py-4">
-                    <span className="text-xl font-semibold text-primary/60 hover:text-primary transition">
+                    <span className="text-xl font-semibold text-primary/60 hover:text-primary transition ">
                       {service}
                     </span>
                   </div>
@@ -175,15 +175,15 @@ export const Hero = () => {
         </div>
 
         {/* SCROLL INDICATOR */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-800">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-800">
           <a
-            href="#about"
+            href="#services"
             className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
           >
-            <span className="text-xs uppercase tracking-widest">Explore</span>
+            <span href="#services" className="text-xs uppercase tracking-widest">Explore</span>
             <ChevronDown className="w-6 h-6 animate-bounce" />
           </a>
-        </div>
+        </div> */}
     </section>
   );
 };

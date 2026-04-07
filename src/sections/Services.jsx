@@ -63,10 +63,10 @@ export const Services = () => {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="glass rounded-3xl p-4 hover:glow-border transition-all duration-300 animate-fade-in"
+              className="glass rounded-2xl p-4 hover:glow-border transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
-              <div className="overflow-hidden rounded-2xl mb-4">
+              <div className="overflow-hidden rounded-xl mb-4">
                 <Swiper
                   modules={[Autoplay]}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -76,7 +76,7 @@ export const Services = () => {
                     <img
                       src={service.image}
                       alt={service.name}
-                      className="w-full h-72 object-cover rounded-2xl"
+                      className="w-full h-72 object-cover rounded-xl"
                     />
                   </SwiperSlide>
                 </Swiper>

@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "+254 98034508 / +254 759157727",
+    value: "+2547-98-034508",
     href: "tel:+254798034508",
   },
   {
