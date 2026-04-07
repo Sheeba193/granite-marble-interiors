@@ -10,9 +10,8 @@ const socialLinks = [
 
 const footerLinks = [
   {label: 'Home', href: '#'},
-  {label: 'About Us', href: '#about'},
   {label: 'Services', href: '#services'},
-  {label: 'Projects', href: '#projects'},
+  {label: 'Products', href: '#products'},
   {label: 'Contact', href: '#contact'},
 ];
 

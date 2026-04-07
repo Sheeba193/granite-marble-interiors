@@ -13,14 +13,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "+254 759 157727",
-    href: "tel:+254759157727",
+    value: "+254 98034508 / +254 759157727",
+    href: "tel:+254798034508",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Chat with us",
-    href: "https://wa.me/254759157727",
+    href: "https://wa.me/254798034508",
   },
 ];
 
